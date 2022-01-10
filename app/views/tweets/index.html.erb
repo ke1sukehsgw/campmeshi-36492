@@ -1,0 +1,11 @@
+<main class="main">
+<%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |f| %>
+  <%= f.text_field :keyword, placeholder: "キャンプ飯を検索する", class: "search-input" %>
+  <%= f.submit "検索", class: "search-btn" %>
+<% end %>
+  <div class="inner">
+    <div class="card__wrapper">
+      <%= render partial: "tweet", collection: @tweets %>
+    </div>
+  </div>
+</main>

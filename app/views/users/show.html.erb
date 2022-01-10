@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="inner">
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+        <%= "#{@user.nickname}のキャンプ飯"%>
+      </h2>
+      <div class="user__card">
+        <%= render partial: 'tweets/tweet', collection: @user.tweets %>
+      </div>
+    </div>
+  </div>
+</div>
