@@ -89,7 +89,7 @@ https://docs.google.com/spreadsheets/d/1K8LiF20_N0U1HM0Mf3zE0eYIzBapotlAVs4iN4ix
 # ローカルでの動作方法
 
 $ git clone https://git.heroku.com/campmeshi-36492.git
-$ cd hoge
+$ cd campmeshi-36492
 $ bundle install
 $ rails db:create
 $ rails db:migrate
